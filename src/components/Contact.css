@@ -1,0 +1,57 @@
+.contact {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 72px 24px;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.contact label {
+    margin-bottom: 4px;
+    display: inline-block;
+}
+
+.contact input[type=text],
+.contact input[type=email],
+.contact textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: #ccc 1px solid;
+    padding: 8px;
+    margin-bottom: 6px;
+}
+
+.contact .error input[type=text],
+.contact .error input[type=email],
+.contact .error textarea {
+    outline: rgb(240, 0, 0) 2px solid;
+}
+
+.contact input[type=text]:focus,
+.contact input[type=email]:focus,
+.contact textarea:focus {
+    outline: #719ECE 2px solid;
+}
+
+.contact input[type=submit] {
+    margin-top: 6px;
+    width: 100%;
+    border: none;
+    background: #5596c2;
+    color: #fff;
+    padding: 10px;
+}
+
+.contact .message {
+    display: none;
+    margin-bottom: 12px;
+    font-size: 0.875em;
+    color: rgb(240, 0, 0);
+}
+
+.contact .error .message {
+    display: block;
+}

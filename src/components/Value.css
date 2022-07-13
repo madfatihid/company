@@ -1,0 +1,111 @@
+.value {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 72px 24px;
+}
+
+.value h2 {
+    text-align: center;
+}
+
+.value .box {
+    position: relative;
+    margin: 14px;
+    text-align: center;
+    padding: 36px;
+    color: #fff;
+    flex-grow: 1;
+    flex-basis: 0;
+    border: none;
+}
+
+.value .box img {
+    height: 26px;
+}
+
+.value .box h3 {
+    margin-top: 8px;
+}
+
+.value .box::after {
+    display: none;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    margin: auto 0;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 20px solid #e15242;
+    border-bottom: 20px solid transparent;
+}
+
+.value>.row> :nth-child(1) {
+    background: #ec7a71;
+    outline: 3px solid #e15242;
+}
+
+.value>.row> :nth-child(1):after {
+    display: block;
+    border-left: 20px solid #e15242;
+}
+
+.value>.row> :nth-child(2) {
+    background: #6a996f;
+    outline: 3px solid #557b58;
+}
+
+.value>.row> :nth-child(2):after {
+    display: block;
+    border-left: 20px solid #557b58;
+}
+
+.value>.row> :nth-child(3) {
+    background: #5596c2;
+    outline: 3px solid #3b7ba8;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .value {
+        max-width: 420px;
+    }
+
+    .value .row {
+        flex-wrap: wrap;
+    }
+
+    .value .box {
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    .value .box::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 0;
+        height: 0;
+        border-top: solid 20px #e15915;
+        border-left: solid 20px transparent;
+        border-right: solid 20px transparent;
+    }
+
+    .value>.row> :nth-child(1):after {
+        display: block;
+        border-left: 20px solid transparent;
+        border-top: solid 20px #e15242;
+    }
+
+    .value>.row> :nth-child(2):after {
+        display: block;
+        border-left: 20px solid transparent;
+        border-top: solid 20px #557b58;
+    }
+}

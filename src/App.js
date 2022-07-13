@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import Carousel from './components/Carousel';
+import Footer from './components/Footer';
+import Contact from './components/Contact';
+import Value from './components/Value';
+import CarouselSlide from './components/CarouselSlide';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Carousel>
+        <CarouselSlide image="/bg.jpg" description="THIS IS A PLACE WHERE TECHNOLOGY & CREATIVITY FUSED INTO DIGITAL CHEMISTRY" />
+        <CarouselSlide image="/about-bg.jpg" description="WE DON'T HAVE THE BEST BUT WE HAVE THE GREATEST TEAM" />
+      </Carousel>
+      <Value />
+      <Contact />
+      <Footer />
+    </>
   );
 }
 

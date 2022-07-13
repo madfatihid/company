@@ -1,0 +1,114 @@
+.navbar {
+  background: #fff;
+  display: block;
+  height: 60px;
+  padding: 0px 20px;
+}
+
+.navbar h1,
+a {
+  margin: 0px;
+  line-height: 60px;
+  height: 60px;
+}
+
+.navbar-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.navbar a {
+  display: inline-block;
+  padding: 0px 16px;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.875em;
+  background: #fff;
+}
+
+.navbar a:hover {
+  background: #f5f4f6;
+}
+
+.navbar h1 {
+  font-size: 1.375em;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 200px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #444345;
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar .toggle {
+  display: none;
+  padding: 0px 24px;
+}
+
+@media only screen and (max-width: 640px) {
+  .navbar {
+    height: auto;
+  }
+
+  .navbar a {
+    display: block;
+  }
+
+  .dropdown {
+    float: none;
+  }
+
+  .dropdown-content {
+    display: block;
+    position: relative;
+    min-width: auto;
+    margin-left: 20px;
+  }
+
+  .navbar .row {
+    flex-wrap: wrap;
+  }
+
+  .navbar .row div {
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .navbar .row div:nth-child(2) a {
+    height: 50px;
+    line-height: 50px;
+  }
+
+
+  .navbar .toggle {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .hide {
+    display: none;
+  }
+}
+

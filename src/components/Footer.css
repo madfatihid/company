@@ -1,0 +1,17 @@
+.footer {
+    background: #333;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-size: 0.8125em;
+}
+
+.footer a {
+    line-height: 20px;
+    font-size: 1.25em;
+}
+
+.footer img {
+    width: 20px;
+    padding: 8px;
+}
